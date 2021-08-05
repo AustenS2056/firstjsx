@@ -1,17 +1,22 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import PersonCard from "./components/PersonCard";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello Dojo!</h1>
-      <h3>Things I need to do:</h3>
-      <ul>
-        <li>Learn React</li>
-        <li>Climb Mt. Everest</li>
-        <li>Run a marathon</li>
-        <li>Feed the dogs</li>
-      </ul>
+      <PersonCard 
+        lastName={"Doe"} 
+        firstName={"Jane"} 
+        age={45}
+        hair={"Black"} />
+
+      <PersonCard
+        lastName={"Smith"}
+        firstName={"John"}
+        age={88}
+        hair={"Brown"}
+      />
     </div>
   );
 }
